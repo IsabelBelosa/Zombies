@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemigos.cs" />
     <Compile Include="Assets\Scripts\Ametralladora.cs" />
+    <Compile Include="Assets\Scripts\Bala.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Weapons Pack(LOW POLY)\Weapons Pack info.txt" />

@@ -364,6 +364,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Ametralladora.cs"
+"Assets/Scripts/Bala.cs"
 "Assets/Scripts/Enemigos.cs"
 -langversion:9.0
 
