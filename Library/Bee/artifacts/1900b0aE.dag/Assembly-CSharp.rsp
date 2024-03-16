@@ -366,6 +366,8 @@
 "Assets/Scripts/Ametralladora.cs"
 "Assets/Scripts/Bala.cs"
 "Assets/Scripts/Enemigos.cs"
+"Assets/Scripts/gestionVidas.cs"
+"Assets/Scripts/Jugador.cs"
 -langversion:9.0
 
 /deterministic

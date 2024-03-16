@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public float velocidad = 5.0f;
+    public float velocidad = 10.0f;
     public float valorherida = 1f;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,15 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         float movDistancia = Time.deltaTime* velocidad;
-        
+        transform.Translate(Vector3.up * movDistancia);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("he chocado");
+        other.SendMessage("tocado",valorherida, SendMessageOptions.DontRequireReceiver);
+        Destroy(gameObject);
     }
 }
+
+
