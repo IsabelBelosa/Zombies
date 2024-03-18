@@ -10,6 +10,13 @@ public class gestionVidas : MonoBehaviour
 
     public UnityEvent hesidotocado;
     public UnityEvent estoyMuerto;
+    public delegate void OnDieEnemy();
+    public static event OnDieEnemy onDieEnemy;
+
+    public void TakeHit(float damage, RaycastHit hit){
+
+        tocado(damage);
+    }
 
     void tocado(float fuerza)
     {
@@ -19,6 +26,9 @@ public class gestionVidas : MonoBehaviour
         if(vida <= 0)
         {
             estoyMuerto.Invoke();
+            if (onDieEnemy != null){
+                onDieEnemy();
+            }
         }
     }
 }
