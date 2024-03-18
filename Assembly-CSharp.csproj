@@ -64,8 +64,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.19f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Jugador.cs" />
     <Compile Include="Assets\Scripts\Enemigos.cs" />
     <Compile Include="Assets\Scripts\Ametralladora.cs" />
+    <Compile Include="Assets\Scripts\gestionVidas.cs" />
+    <Compile Include="Assets\Scripts\Bala.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Weapons Pack(LOW POLY)\Weapons Pack info.txt" />
