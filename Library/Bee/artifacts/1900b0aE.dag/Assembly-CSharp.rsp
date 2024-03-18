@@ -109,7 +109,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -367,7 +366,9 @@
 "Assets/Scripts/Bala.cs"
 "Assets/Scripts/Enemigos.cs"
 "Assets/Scripts/gestionVidas.cs"
+"Assets/Scripts/Hordas.cs"
 "Assets/Scripts/Jugador.cs"
+"Assets/Scripts/ValoresEnemigos.cs"
 -langversion:9.0
 
 /deterministic
