@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/super market.unity
+    guid: 25dd7763819b2e1449cd2f9ddeb8782c
+  - enabled: 1
+    path: Assets/Scenes/CuentaAtras.unity
+    guid: 9c508b8dbe91a3748bbc7fa680f8939d
+  - enabled: 1
+    path: Assets/Scenes/HasGanado.unity
+    guid: 35d108cb04c113749865f95f6b921a1b
+  - enabled: 1
+    path: Assets/Scenes/HasPerdido.unity
+    guid: 5e19f9c632bc37f4a911728c12382e3b
   m_configObjects: {}
