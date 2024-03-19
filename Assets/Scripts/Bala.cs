@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    public float velocidad = 20.0f;
+    public float velocidad = 200.0f;
     public float valorherida = 1f;
     // Start is called before the first frame update
     void Start()

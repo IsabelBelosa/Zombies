@@ -144,7 +144,7 @@ TextureImporter:
         width: 375
         height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,6 +152,48 @@ TextureImporter:
       bones: []
       spriteID: c231715f4eb2a214dbe6c5df855cf83a
       internalID: 1347247705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game wooden user interface_5999362_0"
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 118
+        width: 138
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a93761b4179d349b94c81741953b28
+      internalID: -1688461253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014game wooden user interface_5999362_1"
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 110
+        width: 140
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4c2d58597b92a43a156e40dc9e5f69
+      internalID: 962780789
       vertices: []
       indices: 
       edges: []
@@ -168,6 +210,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       play: 1347247705
+      "\u2014Pngtree\u2014game wooden user interface_5999362_0": -1688461253
+      "\u2014Pngtree\u2014game wooden user interface_5999362_1": 962780789
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
