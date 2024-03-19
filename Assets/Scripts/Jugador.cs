@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class Jugador : MonoBehaviour
 {
     Transform salida;
     float proximodisparo = 0f;
     float tiempodeEspera = 0.3f;
+    public Text contador; // Ahora es una variable de instancia
+    float vida = 3f; // Ahora es una variable de instancia
     public GameObject bala;
     public static int vecesAtacado = 0; // Contador de veces atacado
     public bool puedeSerAtacado = true; // Bandera para controlar si el jugador puede ser atacado
@@ -17,6 +21,7 @@ public class Jugador : MonoBehaviour
     void Start()
     {
         salida = gameObject.transform.GetChild(0).transform;
+        ActualizarContadorVidas(); // Actualiza el contador de vidas al inicio
     }
 
     void Update()
@@ -30,11 +35,13 @@ public class Jugador : MonoBehaviour
     }
 
     // Método para incrementar el contador de veces atacado
-    public static void IncrementarVecesAtacado()
+    public void IncrementarVecesAtacado() // Ahora no es estático
     {
         if (vecesAtacado < 3) // Solo incrementar si no se ha alcanzado el límite
         {
             vecesAtacado++;
+            vida--;
+            ActualizarContadorVidas(); // Actualiza el contador de vidas
             // Verifica si el jugador ha sido atacado tres veces
             if (vecesAtacado == 3)
             {
@@ -44,7 +51,7 @@ public class Jugador : MonoBehaviour
     }
 
     // Método para manejar la muerte del jugador
-    static void Morir()
+    void Morir() // Ahora no es estático
     {
         // Notifica a los suscriptores de que el jugador ha muerto
         if (OnDeathPlayer != null)
@@ -56,7 +63,13 @@ public class Jugador : MonoBehaviour
         SceneManager.LoadScene("HasPerdido");
 
         // Destruye al jugador
-        Destroy(GameObject.FindGameObjectWithTag("Player"));
+        Destroy(gameObject);
+    }
+
+    // Método para actualizar el contador de vidas en el UI
+    void ActualizarContadorVidas() // Ahora no es estático
+    {
+        contador.text = "Vidas: " + vida;
     }
 
     // Método para activar la bandera que permite al jugador ser atacado

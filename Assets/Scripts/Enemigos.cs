@@ -30,17 +30,19 @@ public class Enemigos : MonoBehaviour
 
     // Método para atacar al jugador
     void AtacarJugador()
-    {
-        // Implementa tu lógica de ataque aquí
-        Debug.Log("El enemigo está atacando al jugador");
+{
+    // Implementa tu lógica de ataque aquí
+    Debug.Log("El enemigo está atacando al jugador");
 
-        if (target != null && target.GetComponent<Jugador>().puedeSerAtacado)
-        {
-            target.GetComponent<Jugador>().DenegarAtaque(); // Desactiva la bandera para evitar ataques múltiples
-            Jugador.IncrementarVecesAtacado();
-            Invoke("PermitirAtaque", 1.0f); // Restablece la bandera después de 1 segundo
-        }
+    // Busca el objeto de jugador en la escena y llama a IncrementarVecesAtacado()
+    Jugador jugador = FindObjectOfType<Jugador>();
+    if (jugador != null && jugador.puedeSerAtacado)
+    {
+        jugador.DenegarAtaque(); // Desactiva la bandera para evitar ataques múltiples
+        jugador.IncrementarVecesAtacado();
+        Invoke("PermitirAtaque", 1.0f); // Restablece la bandera después de 1 segundo
     }
+}
 
     void PermitirAtaque()
     {

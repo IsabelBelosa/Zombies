@@ -367,6 +367,7 @@
 "Assets/Scripts/Bala.cs"
 "Assets/Scripts/CuentaAtras.cs"
 "Assets/Scripts/Enemigos.cs"
+"Assets/Scripts/GameOver.cs"
 "Assets/Scripts/gestionVidas.cs"
 "Assets/Scripts/Hordas.cs"
 "Assets/Scripts/Jugador.cs"
