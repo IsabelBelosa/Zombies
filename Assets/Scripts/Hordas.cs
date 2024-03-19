@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Hordas : MonoBehaviour
 {
@@ -21,11 +23,27 @@ public class Hordas : MonoBehaviour
         gestionVidas.onDieEnemy += enemigoMuetro;
     }
 
-    void NextHorda(){
+    void NextHorda()
+    {
         numHordaActual++;
-        enemigoActual = valoresEnemigos[numHordaActual-1];
-        enemigosPorCrear= enemigoActual.numeroEnemigos;
-        enemigosPorMatar = enemigoActual.numeroEnemigos;
+        if (numHordaActual <= valoresEnemigos.Length)
+        {
+            enemigoActual = valoresEnemigos[numHordaActual - 1];
+            enemigosPorCrear = enemigoActual.numeroEnemigos;
+            enemigosPorMatar = enemigoActual.numeroEnemigos;
+        }
+        else
+        {
+            Scene escenaActual = SceneManager.GetActiveScene();
+            if(escenaActual.name == "SampleScene")
+            {
+                SceneManager.LoadScene("super market");
+            }
+            else
+            {
+                SceneManager.LoadScene("HasGanado");
+            }
+        }
     }
 
     // Update is called once per frame

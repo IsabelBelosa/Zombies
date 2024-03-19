@@ -5,8 +5,8 @@ using UnityEngine.Events;
 
 public class gestionVidas : MonoBehaviour
 {
-    public float vida = 10f;
-    public float MaxVida = 10f;
+    public float vida = 5f;
+    public float MaxVida = 5f;
 
     public UnityEvent hesidotocado;
     public UnityEvent estoyMuerto;

@@ -245,11 +245,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   valoresEnemigos:
   - tipoEnemigo: {fileID: 7352064817183181647, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
-    numeroEnemigos: 2
+    numeroEnemigos: 5
     tiempoEntreEnemigos: 5
   - tipoEnemigo: {fileID: 7352064817183181647, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
-    numeroEnemigos: 2
-    tiempoEntreEnemigos: 3
+    numeroEnemigos: 3
+    tiempoEntreEnemigos: 2
   enemigoActual:
     tipoEnemigo: {fileID: 0}
     numeroEnemigos: 0
@@ -284,7 +284,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.5471698, g: 0.45451227, b: 0.17653969, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.1
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: d64a4bf4006141949ac14c482cb640c2, type: 2}
   m_BuildHeightMesh: 0
@@ -695,6 +695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
+    - target: {fileID: 8189833792788741044, guid: 9558ba4dc271bb343b73674351e8196e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -718,7 +722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2514749625286731944, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 207.6287
+      value: 204.03
       objectReference: {fileID: 0}
     - target: {fileID: 2514749625286731944, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
       propertyPath: m_LocalRotation.w
@@ -748,13 +752,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4189248294775362712, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845653721996289129, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7122db09428d8d149827cf7b2debf93a, type: 2}
     - target: {fileID: 7352064817183181647, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
       propertyPath: m_Name
       value: Enemigo con vida
       objectReference: {fileID: 0}
     - target: {fileID: 7352064817183181647, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352064817183181647, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065899415624394906, guid: 0149aee09d3b77a41be757787b66f254, type: 3}
+      propertyPath: m_Speed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
